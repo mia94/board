@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://batis.apache.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yi.mapper.BoardMapper">
+
+	<select id="selectByAll" resultType="BoardVO">
+		SELECT *
+		FROM tbl_board
+	</select>
+	
+	<insert id="insertBoard">
+		INSERT INTO board
+		(board_title, content,writer)
+		VALUES(#{title}, #{content},#{writer.userid})
+	</insert>
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
